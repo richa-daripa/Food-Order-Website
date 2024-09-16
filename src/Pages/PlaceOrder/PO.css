@@ -1,0 +1,129 @@
+.place-order {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    padding: 12% 10% 0;
+    gap: 70px;
+
+}
+
+.place-left {
+    width: 100%;
+    max-width: max(30%, 500px);
+}
+
+.place-left h2 {
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+
+.place-left input {
+    margin-bottom: 30px;
+    width: 100%;
+    padding: 10px 20px;
+    border: 1px solid #c5c5c5;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.place-left input:focus {
+    color: #475F7B;
+    background-color: #FFF;
+    border-color: #5A8DEE;
+    outline: 0;
+    box-shadow: 0 3px 8px 0 rgb(0 0 0 / 10%);
+}
+
+.place-left .fields {
+    display: flex;
+    gap: 15px;
+}
+
+.place-right {
+    width: 100%;
+    max-width: max(40%, 500px);
+    padding-top: 5px;
+}
+
+.place-right button {
+    font-size: 16px;
+}
+
+
+/*---------------------------------------------------responsive---------------------------------------------------*/
+@media screen and (max-width:1024px) {
+    .place-order {
+        padding-top: 15%;
+        display: flex;
+        flex-direction: column;
+        gap: 70px;
+    }
+
+    .place-left input,
+    .fields,
+    .place-right button {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:770px) {
+
+    .place-left {
+        padding-top: 10%;
+    }
+
+    .place-left h2 {
+        font-size: 30px;
+    }
+
+    .place-left input,
+    .fields {
+        width: 140%;
+        font-size: 20px;
+    }
+
+    .place-right button {
+        font-size: 20px;
+    }
+
+    .place-left input {
+        border: 2px solid rgb(175, 175, 175);
+    }
+}
+
+@media screen and (max-width:450px) {
+    .place-order {
+        min-width: 400%;
+        gap: 150px;
+        padding: 45% 20%;
+    }
+
+    .place-left h2 {
+        padding-bottom: 15%;
+        width: 190%;
+        font-size: 20vw;
+    }
+
+    .place-left input,
+    .fields {
+        width: 230%;
+        font-size: 14vw;
+    }
+
+    .place-left .fields {
+        margin-bottom: -35%;
+        gap: 50px;
+    }
+
+    .place-left input {
+        margin-bottom: 20%;
+        padding: 20px 30px;
+        border: 2px solid #686767;
+    }
+
+    .place-right button {
+        width: 60%;
+        font-size: 14vw;
+    }
+
+}

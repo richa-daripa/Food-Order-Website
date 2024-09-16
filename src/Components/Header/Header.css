@@ -1,0 +1,149 @@
+.header {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../images/header_img3.png') no-repeat center;
+    position: relative;
+    background-size: cover;
+}
+
+.header-content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.5vw;
+    bottom: 10%;
+    padding-left: 25px;
+    left: 6vw;
+    max-width: 45%;
+    color: white;
+}
+
+.header-content h2 {
+    font-weight: 500;
+    font-size: 4vw;
+    animation: slide-up 2s ease-in-out forwards;
+}
+
+.header-content p {
+    font-size: 16px;
+    animation: slide-up 3s ease-in-out forwards;
+}
+
+
+.header-content button {
+    border: none;
+    color: black;
+    font-weight: 500;
+    background: -webkit-linear-gradient(26deg, rgb(246, 203, 73), #f4511e);
+    font-size: 16px;
+    border-radius: 50px;
+    padding: 10px 25px;
+    cursor: pointer;
+    transition: .3s;
+    animation: slide-up 4s ease-in-out forwards;
+}
+
+.header-content button:hover {
+    text-decoration: underline;
+}
+
+/*---------------------------------------------------responsive---------------------------------------------------*/
+@media screen and (max-width:1024px) {
+
+    .header-content {
+        max-width: 55%;
+    }
+
+    .header-content h2 {
+        font-size: 3rem;
+    }
+
+    .header-content p {
+        font-size: 1.1rem;
+    }
+
+    .header-content button {
+        font-size: 18px;
+    }
+}
+
+
+@media screen and (max-width:770px) {
+    .header {
+        height: 120vh;
+        min-width: 120%;
+    }
+
+    .header-content {
+        gap: 5vw;
+    }
+
+    .header-content h2 {
+        font-size: 3.2rem;
+    }
+
+    .header-content p {
+        font-size: 1.3rem;
+    }
+
+    .header-content button {
+        font-size: 20px;
+    }
+
+    .header-content {
+        max-width: 65%;
+    }
+
+}
+
+@media screen and (max-width:700px) {
+    .header {
+        min-width: 170%;
+        height: 180vh;
+    }
+
+    .header-content h2 {
+        font-size: 5rem;
+    }
+
+    .header-content p {
+        font-size: 2rem;
+    }
+
+    .header-content button {
+        font-size: 30px;
+    }
+
+    .header-content {
+        max-width: 70%;
+        gap: 12vw;
+    }
+}
+
+
+@media screen and (max-width:450px) {
+    .header {
+        min-width: 400%;
+        height: 400vh;
+    }
+
+    .header-content {
+        max-width: 80%;
+        gap: 25vw;
+        padding-left: 5%;
+    }
+
+    .header-content h2 {
+        font-size: 10rem;
+    }
+
+    .header-content p {
+        font-size: 4rem;
+    }
+
+    .header-content button {
+        font-size: 60px;
+        padding: 20px 30px;
+    }
+}

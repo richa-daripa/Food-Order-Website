@@ -1,0 +1,283 @@
+.navbar {
+    padding: 10px 8% 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    background-color: black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+}
+
+.navbar .logo {
+    width: 150px;
+}
+
+.navbar-menu {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    color: rgb(255, 207, 147);
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+li {
+    cursor: pointer;
+}
+
+li:hover {
+    color: white;
+}
+
+/*
+.navbar .active{
+    border-bottom: 3px solid tomato;
+    padding-bottom: 5px;
+}*/
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.navbar-basket {
+    color: rgb(4, 191, 228);
+    position: relative;
+    cursor: pointer;
+}
+
+/*
+.navbar-basket .dot {
+    position: absolute;
+    min-width: 8px;
+    min-height: 8px;
+    background-color: tomato;
+    border-radius: 5px;
+    top: -8px;
+    right: -2px;
+}
+*/
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #393838;
+    border: 1px solid rgb(101, 100, 100);
+    border-radius: 25px;
+}
+
+.search-bar input {
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    font-size: 15px;
+    color: white;
+}
+
+.search-bar .search {
+    color: rgb(167, 163, 163);
+    border: none;
+    font-size: 20px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    padding-right: 20px;
+}
+
+.navbar button {
+    background: transparent;
+    font-size: 16px;
+    color: white;
+    background: #ef652a;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.navbar button:hover {
+    background-color: #fe8d6b;
+}
+
+.ham-menu {
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    display: none;
+}
+
+.mob-navbar-menu {
+    position: fixed;
+    top: 3rem;
+    right: 0;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0.5rem;
+    color: rgb(255, 207, 147);
+    background-color: rgba(44, 43, 43, 0.9);
+    height: fit-content;
+    min-width: 12rem;
+    animation: slide-right 1s ease-in-out forwards;
+}
+
+.mob-navbar-menu li {
+    margin: 0.25rem;
+}
+
+
+/*---------------------------------------------------responsive---------------------------------------------------*/
+
+@media screen and (max-width:1024px) {
+
+    .navbar .logo {
+        width: 140px;
+    }
+
+    .navbar-menu {
+        font-size: 20px;
+    }
+
+    .search-bar {
+        border: none;
+        background: transparent;
+    }
+
+    .search-bar input {
+        display: none;
+    }
+
+    .search-bar .search {
+        font-size: 25px;
+        margin-right: 0;
+        padding-right: 0;
+    }
+
+    .navbar button {
+        font-size: 18px;
+    }
+    .navbar-right{
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width:770px) {
+
+    .ham-menu {
+        display: flex;
+    }
+
+    .navbar-menu {
+        display: none;
+    }
+
+
+    .navbar .logo {
+        width: 170px;
+    }
+
+    .navbar-basket {
+        font-size: 20px;
+    }
+
+    .navbar button {
+        font-size: 20px;
+    }
+
+    .search-bar .search {
+        font-size: 25px;
+    }
+
+    .ham-menu {
+        font-size: 30px;
+    }
+
+    .mob-navbar-menu {
+        font-size: 3.5vw;
+        width: 40%;
+        top: 4.5rem;
+        padding: 10% 5%;
+        height: 220rem;
+    }
+
+    .mob-navbar-menu li {
+        margin: 2rem;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .navbar .logo {
+        width: 250px;
+    }
+
+    .navbar-basket {
+        font-size: 30px;
+    }
+
+    .navbar button {
+        font-size: 30px;
+
+    }
+
+    .search-bar .search {
+        font-size: 40px;
+    }
+
+    .ham-menu {
+        font-size: 35px;
+    }
+
+    .mob-navbar-menu {
+        font-size: 5vw;
+        top: 6rem;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .navbar .logo {
+        width: 450px;
+    }
+
+    .navbar-basket {
+        font-size: 50px;
+    }
+
+    .navbar button {
+        font-size: 65px;
+        padding: 15px 25px;
+    }
+
+    .search-bar .search {
+        font-size: 75px;
+    }
+
+    .navbar {
+        height: 25vh;
+    }
+
+    .ham-menu {
+        font-size: 75px;
+    }
+
+    .mob-navbar-menu {
+        font-size: 5rem;
+        width: 60%;
+        top: 12rem;
+        padding: 10% 0;
+    }
+
+    .mob-navbar-menu li {
+        margin: 5rem;
+    }
+
+    .navbar-right {
+        gap: 60px;
+    }
+}

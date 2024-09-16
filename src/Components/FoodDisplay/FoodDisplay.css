@@ -1,0 +1,72 @@
+.food_display {
+    width: 100%;
+    background: -webkit-linear-gradient(16deg, #f35f32, rgb(255, 215, 96));
+    padding: 35px 0;
+}
+
+.food_display h2 {
+    font-weight: 500;
+    font-size: 30px;
+    text-align: center;
+}
+
+.food-display-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 30px;
+    row-gap: 50px;
+    padding: 3% 10%;
+}
+
+
+/*---------------------------------------------------responsive---------------------------------------------------*/
+@media screen and (max-width:1024px) {
+    .food-display-list {
+        padding: 5%;
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width:770px) {
+    .food_display {
+        min-width: 120%;
+        padding: 5% 0;
+    }
+
+    .food_display h2 {
+        font-size: 5vw;
+    }
+
+    .food-display-list {
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .food_display {
+        min-width: 170%;
+        padding: 10% 0;
+    }
+
+    .food_display h2 {
+        font-size: 7vw;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .food_display {
+        min-width: 400%;
+        padding: 25% 0;
+    }
+
+    .food_display h2 {
+        font-size: 20vw;
+    }
+
+    .food-display-list {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        padding: 8% 3%;
+    }
+}

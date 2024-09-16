@@ -1,0 +1,234 @@
+.sign-in {
+    position: fixed;
+    z-index: 4;
+    width: 100%;
+    height: 100%;
+    background-color: #00000090;
+    display: grid;
+}
+
+.sign-in .content {
+    place-self: center;
+    width: 430px;
+    color: #515151;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 10px 30px;
+    border-radius: 8px;
+    font-size: 15px;
+    animation: fadeIn 0.5s;
+}
+
+.sign-in .content .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+}
+
+#cross-icon {
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.popup {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.popup input {
+    outline: none;
+    border: 1px solid #c9c9c9;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.popup input:focus {
+    color: #475F7B;
+    background-color: #FFF;
+    border-color: #5A8DEE;
+    outline: 0;
+    box-shadow: 0 3px 8px 0 rgb(0 0 0 / 10%);
+}
+
+.sign-in .content button {
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    color: white;
+    background-color: #f4511e;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.condition {
+    display: flex;
+    align-items: start;
+    gap: 8px;
+    margin-top: -15px;
+    color: rgb(137, 135, 135);
+    font-size: 14px;
+}
+
+.condition input {
+    margin-top: 5px;
+    width: 30px;
+    height: 15px;
+}
+
+#bottom-line {
+    margin-bottom: 17px;
+    font-size: 16px;
+}
+
+.sign-in p span {
+    color: #f4511e;
+    font-weight: 500;
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+.content h4 {
+    display: flex;
+    flex-direction: row;
+    color: #999696;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.content h4:before,
+.content h4:after {
+    content: "";
+    flex: 1 1;
+    border-bottom: 1px solid rgb(149, 147, 147);
+    margin: 10px;
+}
+
+.sign-in .content .google {
+    background-color: transparent;
+    color: black;
+    border: 1px solid rgb(110, 109, 109);
+}
+.validation-messages{
+    font-size: 12px;
+    padding-left: 10px;
+    color: red;
+}
+/*----------------------------------------------------------------responsive-------------------------------------------------*/
+
+@media screen and (max-width:770px){
+    .sign-in .content {
+        width: 60vh;
+        padding: 5% 3%;
+    }
+    .sign-in .title {
+        margin-bottom: 5%;
+    }
+
+    .sign-in h2 {
+        font-size: 4.5vw;
+    }
+    #cross-icon {
+        font-size: 30px;
+    }
+    .popup input {
+        padding: 10px 20px;
+        font-size: 3vw;
+        border: 1px solid grey;
+    }
+    .condition {
+        margin-top: 10px;
+        font-size: 2.5vw;
+    }
+    .condition input {
+        width: 35px;
+        height: 35px;
+    }
+    .sign-in .content button {
+        font-size: 3vw;
+        padding: 3%;
+        margin: 5px 0;
+    }
+    #bottom-line, #bottom-line span {
+        font-size: 3vw;
+    }
+    .content h4 {
+        font-size: 3.2vw;
+    }
+    .validation-messages{
+        font-size: 2vw; 
+    }
+}
+@media screen and (max-width:450px) {
+
+    .sign-in .content {
+        width: 160vh;
+        padding: 5% ;
+    }
+
+    .sign-in .title {
+        margin-bottom: 10%;
+    }
+
+    .sign-in h2 {
+        font-size: 20vw;
+    }
+
+    #cross-icon {
+        font-size: 70px;
+    }
+
+    .popup {
+        gap: 30vw;
+    }
+
+    .popup input {
+        padding: 20px 50px;
+        font-size: 16vw;
+        border: 2px solid grey;
+    }
+    
+    .condition {
+        margin-top: 5%;
+        font-size: 13vw;
+    }
+
+    .condition input {
+        width: 90px;
+        height: 65px;
+    }
+
+    .sign-in .content button {
+        font-size: 15vw;
+        padding: 3%;
+        margin: 5% 0;
+        border-radius: 15px;
+    }
+
+    #bottom-line, #bottom-line span {
+        font-size: 15vw;
+    }
+
+    .content h4 {
+        font-size: 20vw;
+    }
+
+    .content h4:before,
+    .content h4:after {
+        border-bottom: 2px solid #514f4f;
+        margin: 0 2% 3.5%;
+    }
+
+    .sign-in .content .google {
+        border: 2px solid rgb(56, 55, 55);
+    }
+
+    .validation-messages{
+        font-size: 12vw; 
+    }
+}

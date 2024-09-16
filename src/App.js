@@ -1,24 +1,36 @@
-import logo from './logo.svg';
+
+import React, { useState } from 'react';
 import './App.css';
+import Navbar from './Components/NavigationBar/Navbar';
+import { Route, Routes } from 'react-router-dom';
+
+import Home from './Pages/Home/Home';
+import Cart from './Pages/Cart/Cart';
+import PO from './Pages/PlaceOrder/PO';
+import Footer from './Components/Footer/Footer';
+import Login from './Components/Login/Login';
 
 function App() {
+  const [showLogin, setShowLogin] = useState(false);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {showLogin ? <Login setShowLogin={setShowLogin} /> : <></>}
+
+      <Navbar setShowLogin={setShowLogin} />
+      
+      <div >
+        <Routes>
+          <Route path='/' element={<Home />} />{/*by default path is only / but since we have used repo as Food-Ordering-App in gitHub therefore instaed of localhost 3000 use this*/}
+          <Route path='/cart' element={<Cart />} />
+          <Route path='/order' element={<PO />} /> 
+        </Routes>
+      </div>
+
+      <Footer />
+    </>
+
+
   );
 }
 
