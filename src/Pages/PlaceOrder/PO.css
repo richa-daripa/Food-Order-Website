@@ -2,7 +2,7 @@
     display: flex;
     align-items: start;
     justify-content: space-between;
-    padding: 12% 10% 0;
+    padding: 10% 10% 0;
     gap: 70px;
 
 }
@@ -69,11 +69,11 @@
 @media screen and (max-width:770px) {
 
     .place-left {
-        padding-top: 10%;
+        padding-top: 5%;
     }
 
     .place-left h2 {
-        font-size: 30px;
+        font-size: 25px;
     }
 
     .place-left input,
@@ -95,11 +95,11 @@
     .place-order {
         min-width: 400%;
         gap: 150px;
-        padding: 45% 20%;
+        padding: 50% 20%;
     }
 
     .place-left h2 {
-        padding-bottom: 15%;
+        padding: 20% 0 10%;
         width: 190%;
         font-size: 20vw;
     }
@@ -107,7 +107,7 @@
     .place-left input,
     .fields {
         width: 230%;
-        font-size: 14vw;
+        font-size: 15vw;
     }
 
     .place-left .fields {
@@ -123,7 +123,7 @@
 
     .place-right button {
         width: 60%;
-        font-size: 14vw;
+        font-size: 15vw;
     }
 
 }

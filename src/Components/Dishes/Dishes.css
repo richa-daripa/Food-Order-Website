@@ -33,13 +33,13 @@
 
 .dishes-descrip {
     color: #676767;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .dishes-price {
     margin-top: 10px;
     color: tomato;
-    font-size: 22px;
+    font-size: 25px;
     font-weight: 500;
 }
 .dishes-price span{
@@ -81,7 +81,8 @@
 
 /*---------------------------------------------------responsive---------------------------------------------------*/
 @media screen and (max-width:1024px){
-    .dishes-rating p {
+    .dishes-rating p, .dishes-price span, .foodcounter p,
+    #add-icon {
         font-size: 2.2vw;
     }
     .dishes-descrip {
@@ -90,21 +91,14 @@
     .dishes-price {
         font-size: 3vw;  
     }
-    .dishes-price span{
-        font-size: 2vw;
-    }
     .dishes button {
         width: 35px;
         font-size: 25px;
     }
-    .foodcounter p,
-    #add-icon {
-        font-size: 2vw;
-    }
 }
 @media screen and (max-width:770px){
     .dishes-rating p {
-        font-size: 4vw;
+        font-size: 3.5vw;
     }
     .dishes-rating img {
         width: 90px;
@@ -132,40 +126,6 @@
         padding: 0 7px;
     }
 }
-@media screen and (max-width:700px) {
-    
-
-    .dishes-rating p {
-        font-size: 6vw;
-    }
-    .dishes-rating img {
-        width: 120px;
-    }
-    .dishes-descrip {
-        font-size: 4vw;
-        padding: 10px 0;
-    }
-
-    .dishes-price {
-        font-size: 9vw;
-        padding: 5px 0;
-    }
-    .dishes-price span{
-        font-size: 6vw;
-    }
-    
-
-    .dishes button {
-        width: 55px;
-        font-size: 40px;
-    }
-   
-    .foodcounter p,
-    #add-icon {
-        font-size: 5vw;
-    }
-}
-
 
 @media screen and (max-width:450px) {
     .dishes {
@@ -183,10 +143,10 @@
     }
 
     .dishes-rating p {
-        font-size: 16vw;
+        font-size: 18vw;
     }
     .dishes-rating img {
-        width: 30vh;
+        width: 25vh;
     }
 
     .dishes-descrip {
@@ -196,7 +156,7 @@
 
     .dishes-price {
         padding: 10px 0;
-        font-size: 20vw;
+        font-size: 25vw;
     }
     .dishes-price span{
         font-size: 15vw;
@@ -211,7 +171,7 @@
     }
     .foodcounter p,
     #add-icon {
-        font-size: 18vw;
+        font-size: 20vw;
         padding: 0 20px;
     }
 

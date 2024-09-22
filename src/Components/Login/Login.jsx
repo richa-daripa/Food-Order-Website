@@ -79,7 +79,7 @@ const Login = ({ setShowLogin }) => {
 
         {currState === "Sign Up" ?
           <p id='bottom-line'>Already have an account? <span onClick={() => setCurrState("Login")}>Login</span></p>
-          : <p id='bottom-line'>New to EatZio? <span onClick={() => setCurrState("Sign Up")}>Sign Up</span></p>
+          : <p id='bottom-line'>New to EatZio? <span onClick={() => setCurrState("Sign Up")}>SignUp</span></p>
         }
       </form>
     </div>

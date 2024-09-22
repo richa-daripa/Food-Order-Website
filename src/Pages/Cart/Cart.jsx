@@ -13,11 +13,11 @@ const Cart = () => {
   return (
     <div className='cart'>
       <div className="cart-items">
-        <div className="heading">
+        <div className="heading styling">
           <p>Food</p>
           <p>Dish name</p>
           <p>Price</p>
-          <p>Quant.</p>
+          <p>Quantity</p>
           <p>Total</p>
         </div>
 

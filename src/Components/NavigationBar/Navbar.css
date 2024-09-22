@@ -13,7 +13,7 @@
 }
 
 .navbar .logo {
-    width: 150px;
+    width: 130px;
 }
 
 .navbar-menu {
@@ -24,18 +24,19 @@
     font-size: 18px;
     margin-top: 10px;
 }
-
-li {
+.navbar-menu li{
     cursor: pointer;
 }
 
-li:hover {
-    color: white;
+.navbar-menu li:hover {
+    color: rgb(255, 151, 76);
+    border-bottom: 3px solid rgb(255, 151, 76);
 }
 
 /*
 .navbar .active{
-    border-bottom: 3px solid tomato;
+    color: rgb(255, 180, 76);
+    border-bottom: 3px solid rgb(255, 180, 76);
     padding-bottom: 5px;
 }*/
 .navbar-right {
@@ -45,8 +46,7 @@ li:hover {
 }
 
 .navbar-basket {
-    color: rgb(4, 191, 228);
-    position: relative;
+    color: rgb(2, 148, 173);
     cursor: pointer;
 }
 
@@ -61,34 +61,10 @@ li:hover {
     right: -2px;
 }
 */
-
-.search-bar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #393838;
-    border: 1px solid rgb(101, 100, 100);
-    border-radius: 25px;
-}
-
-.search-bar input {
-    background: transparent;
-    border: none;
-    outline: none;
-    padding: 10px 20px;
-    font-size: 15px;
-    color: white;
-}
-
-.search-bar .search {
-    color: rgb(167, 163, 163);
-    border: none;
+.search{
+    color: rgb(199, 197, 197);
     font-size: 20px;
-    border-radius: 0 5px 5px 0;
-    cursor: pointer;
-    padding-right: 20px;
 }
-
 .navbar button {
     background: transparent;
     font-size: 16px;
@@ -145,19 +121,8 @@ li:hover {
         font-size: 20px;
     }
 
-    .search-bar {
-        border: none;
-        background: transparent;
-    }
-
-    .search-bar input {
-        display: none;
-    }
-
-    .search-bar .search {
-        font-size: 25px;
-        margin-right: 0;
-        padding-right: 0;
+    .search {
+        font-size: 22px;  
     }
 
     .navbar button {
@@ -178,29 +143,20 @@ li:hover {
         display: none;
     }
 
-
     .navbar .logo {
         width: 170px;
     }
 
-    .navbar-basket {
+    .navbar-basket, .navbar button {
         font-size: 20px;
     }
 
-    .navbar button {
-        font-size: 20px;
-    }
-
-    .search-bar .search {
+    .search, .ham-menu {
         font-size: 25px;
     }
 
-    .ham-menu {
-        font-size: 30px;
-    }
-
     .mob-navbar-menu {
-        font-size: 3.5vw;
+        font-size: 3vw;
         width: 40%;
         top: 4.5rem;
         padding: 10% 5%;
@@ -210,35 +166,11 @@ li:hover {
     .mob-navbar-menu li {
         margin: 2rem;
     }
-}
-
-@media screen and (max-width:700px) {
-    .navbar .logo {
-        width: 250px;
-    }
-
-    .navbar-basket {
-        font-size: 30px;
-    }
-
-    .navbar button {
-        font-size: 30px;
-
-    }
-
-    .search-bar .search {
-        font-size: 40px;
-    }
-
-    .ham-menu {
-        font-size: 35px;
-    }
-
-    .mob-navbar-menu {
-        font-size: 5vw;
-        top: 6rem;
+    .navbar-right{
+        gap: 40px;
     }
 }
+
 
 @media screen and (max-width:450px) {
     .navbar .logo {
@@ -246,28 +178,24 @@ li:hover {
     }
 
     .navbar-basket {
-        font-size: 50px;
+        font-size: 52px;
     }
 
     .navbar button {
-        font-size: 65px;
+        font-size: 60px;
         padding: 15px 25px;
     }
 
-    .search-bar .search {
-        font-size: 75px;
+    .search, .ham-menu  {
+        font-size: 70px;
     }
 
     .navbar {
         height: 25vh;
     }
 
-    .ham-menu {
-        font-size: 75px;
-    }
-
     .mob-navbar-menu {
-        font-size: 5rem;
+        font-size: 4rem;
         width: 60%;
         top: 12rem;
         padding: 10% 0;
@@ -277,7 +205,4 @@ li:hover {
         margin: 5rem;
     }
 
-    .navbar-right {
-        gap: 60px;
-    }
 }

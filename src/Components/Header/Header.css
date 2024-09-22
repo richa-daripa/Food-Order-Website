@@ -28,6 +28,7 @@
 .header-content p {
     font-size: 16px;
     animation: slide-up 3s ease-in-out forwards;
+    color: #939393;
 }
 
 
@@ -35,17 +36,17 @@
     border: none;
     color: black;
     font-weight: 500;
-    background: -webkit-linear-gradient(26deg, rgb(246, 203, 73), #f4511e);
-    font-size: 16px;
-    border-radius: 50px;
-    padding: 10px 25px;
+    background: -webkit-linear-gradient(16deg, rgb(246, 203, 73), #f4511e);
+    font-size: 15px;
+    border-radius: 25px;
+    padding: 10px 20px;
     cursor: pointer;
     transition: .3s;
     animation: slide-up 4s ease-in-out forwards;
 }
 
 .header-content button:hover {
-    text-decoration: underline;
+    background: -webkit-linear-gradient(16deg,  #f4511e, rgb(246, 203, 73));
 }
 
 /*---------------------------------------------------responsive---------------------------------------------------*/
@@ -56,11 +57,11 @@
     }
 
     .header-content h2 {
-        font-size: 3rem;
+        font-size: 4rem;
     }
 
     .header-content p {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
     }
 
     .header-content button {
@@ -71,7 +72,7 @@
 
 @media screen and (max-width:770px) {
     .header {
-        height: 120vh;
+        height: 100vh;
         min-width: 120%;
     }
 
@@ -80,7 +81,7 @@
     }
 
     .header-content h2 {
-        font-size: 3.2rem;
+        font-size: 3.8rem;
     }
 
     .header-content p {
@@ -88,7 +89,8 @@
     }
 
     .header-content button {
-        font-size: 20px;
+        font-size: 18px;
+        padding: 10px 20px ;
     }
 
     .header-content {
@@ -97,40 +99,16 @@
 
 }
 
-@media screen and (max-width:700px) {
-    .header {
-        min-width: 170%;
-        height: 180vh;
-    }
-
-    .header-content h2 {
-        font-size: 5rem;
-    }
-
-    .header-content p {
-        font-size: 2rem;
-    }
-
-    .header-content button {
-        font-size: 30px;
-    }
-
-    .header-content {
-        max-width: 70%;
-        gap: 12vw;
-    }
-}
-
 
 @media screen and (max-width:450px) {
     .header {
         min-width: 400%;
-        height: 400vh;
+        height: 380vh;
     }
 
     .header-content {
         max-width: 80%;
-        gap: 25vw;
+        gap: 30vw;
         padding-left: 5%;
     }
 
@@ -143,7 +121,8 @@
     }
 
     .header-content button {
-        font-size: 60px;
-        padding: 20px 30px;
+        font-size: 55px;
+        padding: 30px 50px;
+        border-radius: 100px;
     }
 }

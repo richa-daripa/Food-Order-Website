@@ -13,13 +13,13 @@ const Footer = () => {
                     <img src={logo} alt='' />
                     <p>Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. </p>
                     <div className="social-link">
-                        <FontAwesomeIcon icon={faFacebook} size="xl" className='icon' />
-                        <FontAwesomeIcon icon={faXTwitter} size="xl" className='icon' />
-                        <FontAwesomeIcon icon={faWhatsapp} size="xl" className='icon' />
+                        <FontAwesomeIcon icon={faFacebook}  className='icon' />
+                        <FontAwesomeIcon icon={faXTwitter}  className='icon' />
+                        <FontAwesomeIcon icon={faWhatsapp}  className='icon' />
                     </div>
                 </div>
                 <div className="content-center">
-                    <h2>COMPANY</h2>
+                    <h2>Company</h2>
                     <ul>
                         <li>Home</li>
                         <li>About us</li>
@@ -28,7 +28,7 @@ const Footer = () => {
                     </ul>
                 </div>
                 <div className="content-center">
-                    <h2>SUPPORT</h2>
+                    <h2>Support</h2>
                     <ul>
                         <li>Feedback</li>
                         <li>FAQ</li>
@@ -36,10 +36,10 @@ const Footer = () => {
                     </ul>
                 </div>
                 <div className="content-right">
-                    <h2>GET IN TOUCH</h2>
+                    <h2>Get In Touch</h2>
                     <ul>
                         <li><FontAwesomeIcon icon={faPhone} id='icons' />+91 785-412-8327</li>
-                        <li><FontAwesomeIcon icon={faEnvelope} id='icons' />foodordering@ClickEat.com</li>
+                        <li><FontAwesomeIcon icon={faEnvelope} id='icons' />foodordering@EatZio.com</li>
                         <li><FontAwesomeIcon icon={faLocationDot} id='icons' />Food Ordering Service, 42nd Living St, 43043 New Delhi, India</li>
                     </ul>
                 </div>

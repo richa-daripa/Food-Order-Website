@@ -5,12 +5,17 @@
 
 .heading {
     display: grid;
-    grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr 0.5fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 0.5fr;
     align-items: center;
-    color: grey;
-    font-size: 18px;
+    color: black;
+    font-size: 18px; 
+    text-align: center;
 }
-
+.styling p{
+    background-color: rgb(250, 171, 107);
+    padding: 10px ;
+    margin: 0 10px;
+}
 .food-ordered {
     margin: 10px 0px;
     color: black;
@@ -23,7 +28,7 @@
 
 .cart hr {
     height: 1px;
-    background-color: #e2e2e2;
+    background-color: #959595;
     border: none;
 }
 
@@ -42,6 +47,7 @@
     display: flex;
     justify-content: space-between;
     gap: max(12vw, 20px);
+   
 }
 
 .cart-total {
@@ -53,12 +59,14 @@
 
 .cart-total h2 {
     margin-bottom: 10px;
+    font-size: 25px;
 }
 
 .total-details {
     display: flex;
     justify-content: space-between;
-    color: #555;
+    color: #515151;
+    font-size: 16px;
 }
 
 .total-details hr {
@@ -83,7 +91,8 @@
 }
 
 .promocode p {
-    color: #737070;
+    color: #666666;
+    font-size: 18px;
 }
 
 .promo-input {
@@ -136,10 +145,11 @@
     .food-ordered,
     .cart-total button,
     .total-details,
-    .promocode {
+    .promocode,
+    .promocode p {
         font-size: 18px;
     }
-
+    
     .food-ordered button {
         font-size: 16px;
         border-radius: 10px;
@@ -153,13 +163,16 @@
 @media screen and (max-width:770px) {
     .cart {
         min-width: 120%;
-        padding: 25% 5% 5%;
+        padding: 20% 5% 5%;
     }
 
     .heading {
-        font-size: 25px;
+        font-size: 22px;
     }
-
+    .styling p{
+        padding: 5px ;
+        margin: 0 5px;
+    }
     .cart-bottom {
         display: flex;
         flex-direction: column;
@@ -172,12 +185,13 @@
     .food-ordered,
     .cart-total button,
     .total-details,
-    .promocode {
-        font-size: 21px;
+    .promocode,
+    .promocode p {
+        font-size: 20px;
     }
 
     .cart-total h2 {
-        font-size: 30px;
+        font-size: 25px;
     }
 
     .promocode {
@@ -213,7 +227,7 @@
     .heading {
         font-size: 15vw;
         margin-bottom: 2%;
-        grid-template-columns: 1fr 2fr 1fr 1fr 1fr 0.5fr;
+        grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr 0.5fr;
     }
 
     .food-ordered {
@@ -226,8 +240,9 @@
     }
 
     .food-ordered button {
-        font-size: 13vw;
-        width: 120%;
+        font-size: 14vw;
+        width: 100%;
+        padding: 10px 20px;
     }
 
     .cart-total {
@@ -235,12 +250,12 @@
     }
 
     .cart-total h2 {
-        font-size: 18vw;
+        font-size: 20vw;
         margin-bottom: 5%;
     }
 
     .total-details {
-        font-size: 14vw;
+        font-size: 15vw;
         margin: 3% 0;
     }
 
@@ -250,8 +265,8 @@
     }
 
     .cart-total button {
-        font-size: 15vw;
-        width: 120vh;
+        font-size: 16vw;
+        width: 90vh;
         padding: 20px 30px;
     }
 
@@ -260,7 +275,9 @@
         width: 200%;
         margin: 50% 0;
     }
-
+    .promocode p{
+        font-size: 15vw;
+    }
     .promo-input {
         margin: 10% 0;
         width: 150%;

@@ -15,10 +15,10 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
-    padding: 10px 30px;
+    padding: 20px 30px;
     border-radius: 8px;
-    font-size: 15px;
     animation: fadeIn 0.5s;
+    font-size: 14px;
 }
 
 .sign-in .content .title {
@@ -26,6 +26,11 @@
     justify-content: space-between;
     align-items: center;
     color: black;
+    font-size: 15px;
+}
+.title h2{
+    font-weight: 600;
+    
 }
 
 #cross-icon {
@@ -44,7 +49,7 @@
     border: 1px solid #c9c9c9;
     padding: 10px;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 15px;
 }
 
 .popup input:focus {
@@ -62,7 +67,7 @@
     color: white;
     background-color: #f4511e;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 15px;
 }
 
 .condition {
@@ -71,7 +76,7 @@
     gap: 8px;
     margin-top: -15px;
     color: rgb(137, 135, 135);
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .condition input {
@@ -80,17 +85,11 @@
     height: 15px;
 }
 
-#bottom-line {
-    margin-bottom: 17px;
-    font-size: 16px;
-}
-
 .sign-in p span {
     color: #f4511e;
     font-weight: 500;
     cursor: pointer;
     margin-left: 10px;
-    font-size: 16px;
 }
 
 .content h4 {
@@ -98,14 +97,14 @@
     flex-direction: row;
     color: #999696;
     font-weight: 300;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .content h4:before,
 .content h4:after {
     content: "";
     flex: 1 1;
-    border-bottom: 1px solid rgb(149, 147, 147);
+    border-bottom: 1px solid rgb(178, 176, 176);
     margin: 10px;
 }
 
@@ -167,7 +166,7 @@
 @media screen and (max-width:450px) {
 
     .sign-in .content {
-        width: 160vh;
+        width: 140vh;
         padding: 5% ;
     }
 
