@@ -25,20 +25,25 @@
     animation: slide-up 2s ease-in-out forwards;
 }
 
-.header-content p {
-    font-size: 16px;
-    animation: slide-up 3s ease-in-out forwards;
-    color: #939393;
+.header-content h2 span {
+    background: -webkit-linear-gradient(16deg, rgb(246, 203, 73), #f4511e);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
+.header-content p {
+    font-size: 18px;
+    animation: slide-up 3s ease-in-out forwards;
+    color: #606060;
+}
 
 .header-content button {
     border: none;
     color: black;
-    font-weight: 500;
-    background: -webkit-linear-gradient(16deg, rgb(246, 203, 73), #f4511e);
-    font-size: 15px;
-    border-radius: 25px;
+    font-weight: 600;
+    background: -webkit-linear-gradient(16deg, #ff5811, #fb740c);
+    font-size: 16px;
+    border-radius: 10px;
     padding: 10px 20px;
     cursor: pointer;
     transition: .3s;
@@ -46,7 +51,7 @@
 }
 
 .header-content button:hover {
-    background: -webkit-linear-gradient(16deg,  #f4511e, rgb(246, 203, 73));
+    background: -webkit-linear-gradient(16deg, #fb740c, #ff5811);
 }
 
 /*---------------------------------------------------responsive---------------------------------------------------*/
@@ -90,7 +95,7 @@
 
     .header-content button {
         font-size: 18px;
-        padding: 10px 20px ;
+        padding: 10px 20px;
     }
 
     .header-content {

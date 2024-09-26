@@ -39,14 +39,14 @@ const Footer = () => {
                     <h2>Get In Touch</h2>
                     <ul>
                         <li><FontAwesomeIcon icon={faPhone} id='icons' />+91 785-412-8327</li>
-                        <li><FontAwesomeIcon icon={faEnvelope} id='icons' />foodordering@EatZio.com</li>
+                        <li><FontAwesomeIcon icon={faEnvelope} id='icons' />foodordering@Eatzio.com</li>
                         <li><FontAwesomeIcon icon={faLocationDot} id='icons' />Food Ordering Service, 42nd Living St, 43043 New Delhi, India</li>
                     </ul>
                 </div>
             </div>
 
             <hr></hr>
-            <p className='copyright'>Copyright 2024 © EatZio.com | All rights reserved.</p>
+            <p className='copyright'>Copyright 2024 © Eatzio.com | All rights reserved.</p>
 
         </div>
     );

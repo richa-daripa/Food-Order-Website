@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react';
 import './Navbar.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMagnifyingGlass, faBagShopping, faBars } from '@fortawesome/free-solid-svg-icons'
+import { faBagShopping, faBars } from '@fortawesome/free-solid-svg-icons'
 import logo from '../../images/logo.png';
 import { StoreContext } from '../../Context API/context';
 import { Link as ScrollLink } from 'react-scroll';
@@ -16,7 +16,7 @@ const Navbar = ({ setShowLogin }) => {
 
   return (
     <div className='navbar'>
-      <RouterLink to='/'><img src={logo} alt='' className='logo' /></RouterLink>
+      <img src={logo} alt='' className='logo' />
 
       <ul className="navbar-menu">
         {/*
@@ -34,9 +34,6 @@ const Navbar = ({ setShowLogin }) => {
       </ul>
 
       <div className="navbar-right">
-
-        <FontAwesomeIcon icon={faMagnifyingGlass} className='search' />
-
         <div className="navbar-basket">
           {
             getTotalAmount() === 0 ?
@@ -46,11 +43,11 @@ const Navbar = ({ setShowLogin }) => {
 
           {/*<div className={getTotalAmount() === 0 ? "" : "dot"}></div>*/}
         </div>
-        <button onClick={() => setShowLogin(true)}>Sign In</button>
+        <button onClick={() => setShowLogin(true)}>Login</button>
 
 
         <FontAwesomeIcon icon={faBars} className='ham-menu' onClick={() => setShowMenu(!showMenu)} />
-        <ul className="mob-navbar-menu  " style={{ display: showMenu ? 'flex' : 'none' }}>
+        <ul className="mob-navbar-menu" style={{ display: showMenu ? 'flex' : 'none' }}>
           <RouterLink to='/'><li onClick={() => setShowMenu(false)}>Home</li></RouterLink>
           <ScrollLink to='header' spy={true} offset={-100} smooth={true} duration={500}><li onClick={() => setShowMenu(false)}>About</li></ScrollLink>
           <ScrollLink to='explore-menu' spy={true} offset={-100} smooth={true} duration={500}><li onClick={() => setShowMenu(false)}>Menu</li></ScrollLink>
@@ -58,8 +55,6 @@ const Navbar = ({ setShowLogin }) => {
           <ScrollLink to='footer' spy={true} offset={-100} smooth={true} duration={500}><li onClick={() => setShowMenu(false)}>Contact</li></ScrollLink>
         </ul>
       </div>
-
-
 
     </div>
   );

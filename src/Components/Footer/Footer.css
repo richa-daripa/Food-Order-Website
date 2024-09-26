@@ -7,7 +7,7 @@
     gap: 20px;
     padding: 50px 10% 10px;
     margin-top: 10%;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .content {
@@ -15,7 +15,7 @@
     display: grid;
     grid-template-columns: 2fr 0.5fr 0.5fr 1.5fr;
     gap: 80px;
-    
+
 }
 
 .content-left img {
@@ -36,7 +36,8 @@
     list-style: none;
     margin-bottom: 10px;
 }
-.content-center li:hover{
+
+.content-center li:hover {
     cursor: pointer;
     color: rgb(255, 207, 147);
 }
@@ -44,7 +45,7 @@
 .content-right h2,
 .content-center h2 {
     color: white;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 500;
 }
 
@@ -52,7 +53,7 @@
     width: 30px;
     padding-right: 10px;
     cursor: pointer;
-    font-size: 22px;
+    font-size: 25px;
 }
 
 .footer hr {
@@ -96,8 +97,9 @@
     }
 
     .content {
-        grid-template-columns: 2.5fr 2fr;
+       width: 100%;
     }
+
     .social-link .icon {
         font-size: 5vw;
     }
@@ -120,7 +122,7 @@
     }
 
     .content {
-        grid-template-columns: 1fr ;
+        grid-template-columns: 2.5fr 2fr;
     }
 
     .social-link .icon {

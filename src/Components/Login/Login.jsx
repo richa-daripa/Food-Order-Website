@@ -71,15 +71,15 @@ const Login = ({ setShowLogin }) => {
         {
           currState === 'Login' ?
             <>
-              <h4>or</h4>
+              <h1>or</h1>
               <button className="google"><FontAwesomeIcon icon={faGoogle} /> Sign in with Google</button>
             </>
             : <></>
         }
 
         {currState === "Sign Up" ?
-          <p id='bottom-line'>Already have an account? <span onClick={() => setCurrState("Login")}>Login</span></p>
-          : <p id='bottom-line'>New to EatZio? <span onClick={() => setCurrState("Sign Up")}>SignUp</span></p>
+          <p id='bottom-line'>Already have an account?<span onClick={() => setCurrState("Login")}>Login</span></p>
+          : <p id='bottom-line'>New to Eatzio?<span onClick={() => setCurrState("Sign Up")}>SignUp</span></p>
         }
       </form>
     </div>

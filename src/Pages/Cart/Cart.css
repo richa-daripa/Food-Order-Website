@@ -8,18 +8,22 @@
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 0.5fr;
     align-items: center;
     color: black;
-    font-size: 18px; 
+    font-size: 20px;
     text-align: center;
+    
 }
-.styling p{
+
+.styling p {
     background-color: rgb(250, 171, 107);
-    padding: 10px ;
-    margin: 0 10px;
+    padding: 10px;
+    margin: 20px 10px 0;
 }
+
 .food-ordered {
     margin: 10px 0px;
     color: black;
-    font-size: 16px;
+    font-size: 18px;
+    place-items: center;
 }
 
 .food-ordered img {
@@ -34,7 +38,7 @@
 
 .food-ordered button {
     background: transparent;
-    padding: 10px;
+    padding: 10px 20px;
     border-radius: 50px;
     background-color: rgb(181, 221, 235);
     border: none;
@@ -47,7 +51,7 @@
     display: flex;
     justify-content: space-between;
     gap: max(12vw, 20px);
-   
+
 }
 
 .cart-total {
@@ -57,20 +61,26 @@
     gap: 20px;
 }
 
-.cart-total h2 {
+.cart-total h2,
+.cart-items h2 {
     margin-bottom: 10px;
     font-size: 25px;
+    font-weight: 600;
 }
 
 .total-details {
     display: flex;
     justify-content: space-between;
     color: #515151;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .total-details hr {
     margin: 10px 0;
+}
+
+.total-details b {
+    font-weight: 600;
 }
 
 .cart-total button {
@@ -82,12 +92,11 @@
     padding: 12px 0;
     border-radius: 4px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .promocode {
     width: 400px;
-
 }
 
 .promocode p {
@@ -149,13 +158,14 @@
     .promocode p {
         font-size: 18px;
     }
-    
+
     .food-ordered button {
         font-size: 16px;
         border-radius: 10px;
     }
 
-    .cart-total h2 {
+    .cart-total h2,
+    .cart-items h2 {
         font-size: 25px;
     }
 }
@@ -169,10 +179,12 @@
     .heading {
         font-size: 22px;
     }
-    .styling p{
-        padding: 5px ;
+
+    .styling p {
+        padding: 5px;
         margin: 0 5px;
     }
+
     .cart-bottom {
         display: flex;
         flex-direction: column;
@@ -190,7 +202,8 @@
         font-size: 20px;
     }
 
-    .cart-total h2 {
+    .cart-total h2,
+    .cart-items h2 {
         font-size: 25px;
     }
 
@@ -249,7 +262,8 @@
         width: 230%;
     }
 
-    .cart-total h2 {
+    .cart-total h2,
+    .cart-items h2 {
         font-size: 20vw;
         margin-bottom: 5%;
     }
@@ -273,11 +287,13 @@
     .promocode {
         font-size: 15vw;
         width: 200%;
-        margin: 50% 0;
+        margin: 50% 0 20%;
     }
-    .promocode p{
+
+    .promocode p {
         font-size: 15vw;
     }
+
     .promo-input {
         margin: 10% 0;
         width: 150%;

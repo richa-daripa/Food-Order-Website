@@ -6,13 +6,13 @@ import menu_5 from './menu_5.png'
 import menu_6 from './menu_6.png'
 
 import food_2 from './food_2.png'
-import food_3 from './food_3.jpg'
-import food_4 from './food_4.jpg'
+import food_3 from './food_3.png'
+import food_4 from './food_4.png'
 import food_7 from './food_7.png'
 import food_8 from './food_8.jpg'
 import food_9 from './food_9.png'
-import food_10 from './food_10.jpg'
-import food_11 from './food_11.jpg'
+import food_10 from './food_10.png'
+import food_11 from './food_11.png'
 import food_12 from './food_12.png'
 import food_13 from './food_13.png'
 import food_14 from './food_14.png'
@@ -22,8 +22,8 @@ import food_18 from './food_18.png'
 import food_19 from './food_19.png'
 import food_20 from './food_20.jpg'
 import food_21 from './food_21.png'
-import food_22 from './food_22.jpg'
-import food_23 from './food_23.png'
+import food_22 from './food_22.png'
+import food_23 from './food_23.jpg'
 
 
 export const menu_list = [
@@ -154,7 +154,7 @@ export const food_item = [
         category: "Dinner"
     }, {
         _id: "15",
-        name: "Tortilla",
+        name: "Flatbread",
         image: food_19,
         price: 4,
         description: "Food provides essential nutrients for overall health and well-being",

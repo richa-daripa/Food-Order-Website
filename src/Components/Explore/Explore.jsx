@@ -18,8 +18,10 @@ const Explore = ({ category, setCategory }) => {
 
     return (
         <div className='explore' id='explore-menu'>
-            <h2>OUR MENU</h2>
-            <p>Choose from a diverse menu featuring a delectable array of dishes crafted with the finest ingredients and culinary expertise. Our mission is to satisfy your cravings and elevate your eating experience, one delicious meal at a time.</p>
+            <h2>Our Menu</h2>
+            <p>Choose from a diverse menu featuring a delectable array of dishes crafted with the finest ingredients and culinary expertise. Our mission is to satisfy your cravings and elevate your eating experience, one delicious meal at a time.
+            Whether you are a food enthusiast exploring new flavors or a casual appetite, Eatzio is here to enhance your culinary adventures.
+            </p>
 
             <div className="explore-list" >
                 {

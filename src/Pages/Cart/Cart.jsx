@@ -13,6 +13,7 @@ const Cart = () => {
   return (
     <div className='cart'>
       <div className="cart-items">
+        <h2>My Orders</h2>
         <div className="heading styling">
           <p>Food</p>
           <p>Dish name</p>

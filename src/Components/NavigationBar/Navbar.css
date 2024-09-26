@@ -1,5 +1,5 @@
 .navbar {
-    padding: 10px 8% 5px;
+    padding: 10px 8%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -9,11 +9,11 @@
     left: 0;
     z-index: 3;
     background-color: black;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.4);
 }
 
 .navbar .logo {
-    width: 130px;
+    width: 150px;
 }
 
 .navbar-menu {
@@ -23,18 +23,15 @@
     color: rgb(255, 207, 147);
     font-size: 18px;
     margin-top: 10px;
-}
-.navbar-menu li{
     cursor: pointer;
 }
 
-.navbar-menu li:hover {
+.navbar-menu :hover {
     color: rgb(255, 151, 76);
-    border-bottom: 3px solid rgb(255, 151, 76);
 }
 
 /*
-.navbar .active{
+.navbar-menu  .active{
     color: rgb(255, 180, 76);
     border-bottom: 3px solid rgb(255, 180, 76);
     padding-bottom: 5px;
@@ -61,10 +58,7 @@
     right: -2px;
 }
 */
-.search{
-    color: rgb(199, 197, 197);
-    font-size: 20px;
-}
+
 .navbar button {
     background: transparent;
     font-size: 16px;
@@ -90,22 +84,24 @@
 
 .mob-navbar-menu {
     position: fixed;
-    top: 3rem;
+    top: 5rem;
     right: 0;
     z-index: 2;
     display: flex;
-    flex-direction: column;
     list-style: none;
-    padding: 0.5rem;
+    align-items: center;
+    justify-content: space-evenly;
     color: rgb(255, 207, 147);
     background-color: rgba(44, 43, 43, 0.9);
+    padding: 0.5rem;
     height: fit-content;
-    min-width: 12rem;
-    animation: slide-right 1s ease-in-out forwards;
+    width: 100%;
+    animation: slide-down 1s ease-in-out forwards;
 }
 
 .mob-navbar-menu li {
     margin: 0.25rem;
+    font-size: 3vw;
 }
 
 
@@ -121,14 +117,11 @@
         font-size: 20px;
     }
 
-    .search {
-        font-size: 22px;  
-    }
-
     .navbar button {
         font-size: 18px;
     }
-    .navbar-right{
+
+    .navbar-right {
         gap: 20px;
     }
 }
@@ -147,28 +140,19 @@
         width: 170px;
     }
 
-    .navbar-basket, .navbar button {
+    .navbar-basket,
+    .navbar button {
         font-size: 20px;
     }
 
-    .search, .ham-menu {
+    .ham-menu {
         font-size: 25px;
     }
 
-    .mob-navbar-menu {
-        font-size: 3vw;
-        width: 40%;
-        top: 4.5rem;
-        padding: 10% 5%;
-        height: 220rem;
-    }
-
-    .mob-navbar-menu li {
-        margin: 2rem;
-    }
-    .navbar-right{
+    .navbar-right {
         gap: 40px;
     }
+
 }
 
 
@@ -186,7 +170,7 @@
         padding: 15px 25px;
     }
 
-    .search, .ham-menu  {
+    .ham-menu {
         font-size: 70px;
     }
 
@@ -194,15 +178,17 @@
         height: 25vh;
     }
 
+    .navbar-right {
+        gap: 60px;
+    }
+
     .mob-navbar-menu {
-        font-size: 4rem;
-        width: 60%;
-        top: 12rem;
-        padding: 10% 0;
+        top: 13rem;
     }
 
     .mob-navbar-menu li {
-        margin: 5rem;
+        margin: 2rem;
+        font-size: 18vw;
     }
 
 }

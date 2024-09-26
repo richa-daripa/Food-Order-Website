@@ -11,9 +11,9 @@
     display: flex;
     flex-direction: row;
     color: rgb(253, 153, 3);
-    font-weight: 500;
-    font-size: 28px;
+    font-size: 35px;
     margin-bottom: 20px;
+    font-weight: 500;
 }
 
 .explore h2:before,
@@ -25,9 +25,9 @@
 }
 
 .explore p {
-    color: #565656;
+    color: #868686;
     margin: 0 20px;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .explore-list {
@@ -35,8 +35,8 @@
     align-items: center;
     justify-content: space-evenly;
     text-align: center;
-    gap: 10px;
-    margin: 20px ;
+    gap: 20px;
+    margin: 20px;
     overflow-x: hidden;
 }
 
@@ -71,10 +71,11 @@
 .each-item .span-container {
     display: flex;
     align-items: center;
+    
 }
 
 .each-item p span {
-    font-size: 14px;
+    font-size: 15px;
     display: inline-block;
     gap: 15px;
 }
@@ -93,7 +94,7 @@
 .prev-btn,
 .next-btn {
     position: absolute;
-    top: 70%;
+    top: 75%;
     right: 60px;
     transform: translateY(-80%);
     padding: 10px 5px;
@@ -125,7 +126,7 @@
 /*---------------------------------------------------responsive---------------------------------------------------*/
 @media screen and (max-width:1024px) {
     .explore {
-       margin: 8% auto;
+        margin: 8% auto;
     }
 
     .explore h2 {
@@ -149,15 +150,15 @@
     }
 
     .explore button {
-        top: 75%; 
+        top: 75%;
     }
-    
+
 }
 
 @media screen and (max-width:770px) {
     .explore {
         min-width: 120%;
-        padding:0 4%;
+        padding: 0 4%;
     }
 
     .explore h2 {
@@ -175,8 +176,9 @@
     .each-item p span {
         font-size: 2.5vw;
     }
+
     .explore button {
-        top: 70%; 
+        top: 70%;
     }
 }
 
@@ -212,9 +214,8 @@
 
     .each-item p span {
         font-size: 15vw;
-        gap: 120px;
+        gap: 40px;
     }
-
 
     .prev-btn,
     .next-btn {

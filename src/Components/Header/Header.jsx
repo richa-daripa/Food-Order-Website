@@ -5,8 +5,8 @@ const Header = () => {
   return (
     <div className='header' id='header'>
       <div className="header-content">
-        <h2>Enjoy Our <br />Delicious Food</h2>
-        <p>Choose from a diverse menu featuring a delectable array of dishes crafted with the finest ingredients and culinary expertise. Our mission is to satisfy your cravings and elevate your eating experience, one delicious meal at a time.</p>
+        <h2>Enjoy our <span>Delicious Homemade</span> Cuisine</h2>
+        <p>Welcome to Eatzio, the cutting-edge culinary technology that is revolutionizing online meal ordering. Happy You, Happy Eating.</p>
         <button>View More</button>
       </div>
 
