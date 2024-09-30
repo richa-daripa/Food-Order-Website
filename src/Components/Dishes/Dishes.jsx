@@ -18,9 +18,9 @@ const Dishes = ({ id, name, price, description, image }) => {
             ? <button onClick={() => addToCart(id)}>+</button>
             :
             <div className="foodcounter">
-              <FontAwesomeIcon icon={faSquareMinus} id='add-icon' size="lg" style={{ color: "#ff7e14", }} onClick={() => removeFromCart(id)} />
+              <FontAwesomeIcon icon={faSquareMinus} size="lg" style={{ color: "#ff7e14", }} onClick={() => removeFromCart(id)} />
               <p>{cartItems[id]}</p>
-              <FontAwesomeIcon icon={faSquarePlus} id='add-icon' size="lg" style={{ color: "#ff7e14", }} onClick={() => addToCart(id)} />
+              <FontAwesomeIcon icon={faSquarePlus} size="lg" style={{ color: "#ff7e14", }} onClick={() => addToCart(id)} />
             </div>
         }
       </div>

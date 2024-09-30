@@ -25,7 +25,7 @@
 }
 
 .explore p {
-    color: #868686;
+    color: #575757;
     margin: 0 20px;
     font-size: 20px;
 }
@@ -43,7 +43,8 @@
 /*
 .explore-list::-webkit-scrollbar {
     display: none;
-}*/
+}
+*/
 .each-item div {
     margin-top: 20px;
     border-radius: 15px;
@@ -122,55 +123,29 @@
     margin: 0 -5%;
 }
 
-
 /*---------------------------------------------------responsive---------------------------------------------------*/
 @media screen and (max-width:1024px) {
     .explore {
         margin: 8% auto;
+        width: 95%;
     }
-
-    .explore h2 {
-        font-size: 2.5vw;
-    }
-
-    .each-item div img {
-        width: 350px;
-    }
-
     .explore p {
-        font-size: 1.8vw;
+        font-size: 2vw;
     }
-
-    .explore-list {
-        margin: 15px 20px;
-    }
-
-    .each-item p span {
-        font-size: 1.8vw;
-    }
-
-    .explore button {
-        top: 75%;
-    }
-
 }
 
 @media screen and (max-width:770px) {
     .explore {
-        min-width: 120%;
-        padding: 0 4%;
-    }
-
-    .explore h2 {
-        font-size: 4vw;
+        min-width: 150%;
+        padding: 0 5%;
     }
 
     .each-item div img {
-        width: 400px;
+        width: 370px;
     }
 
     .explore p {
-        font-size: 2.8vw;
+        font-size: 3.4vw;
     }
 
     .each-item p span {
@@ -178,10 +153,10 @@
     }
 
     .explore button {
-        top: 70%;
+        top: 75%;
+        margin: 0 -15px;
     }
 }
-
 
 @media screen and (max-width:450px) {
     .explore {
@@ -196,7 +171,7 @@
     }
 
     .explore h2 {
-        font-size: 20vw;
+        font-size: 25vw;
     }
 
     .explore h2:before,
@@ -219,15 +194,10 @@
 
     .prev-btn,
     .next-btn {
-        font-size: 12vw;
+        font-size: 15vw;
         padding: 20px;
         width: 75px;
         border-radius: 25px;
-    }
-
-    .explore button {
-        margin: 0 10px;
         top: 80%;
     }
-
 }

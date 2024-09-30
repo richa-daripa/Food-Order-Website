@@ -26,16 +26,12 @@
     cursor: pointer;
 }
 
-.navbar-menu :hover {
-    color: rgb(255, 151, 76);
-}
-
-/*
 .navbar-menu  .active{
     color: rgb(255, 180, 76);
     border-bottom: 3px solid rgb(255, 180, 76);
     padding-bottom: 5px;
-}*/
+}
+
 .navbar-right {
     display: flex;
     align-items: center;
@@ -62,13 +58,12 @@
 .navbar button {
     background: transparent;
     font-size: 16px;
-    color: white;
     background: #ef652a;
     padding: 8px 20px;
     border: none;
     border-radius: 5px;
-    cursor: pointer;
     transition: 0.5s;
+    color: white;
 }
 
 .navbar button:hover {
@@ -77,33 +72,25 @@
 
 .ham-menu {
     color: white;
-    cursor: pointer;
     font-size: 20px;
     display: none;
 }
 
 .mob-navbar-menu {
-    position: fixed;
+    position: absolute;
     top: 5rem;
     right: 0;
-    z-index: 2;
     display: flex;
     list-style: none;
     align-items: center;
     justify-content: space-evenly;
     color: rgb(255, 207, 147);
     background-color: rgba(44, 43, 43, 0.9);
-    padding: 0.5rem;
-    height: fit-content;
+    padding: 1rem;
     width: 100%;
     animation: slide-down 1s ease-in-out forwards;
-}
-
-.mob-navbar-menu li {
-    margin: 0.25rem;
     font-size: 3vw;
 }
-
 
 /*---------------------------------------------------responsive---------------------------------------------------*/
 
@@ -120,16 +107,13 @@
     .navbar button {
         font-size: 18px;
     }
-
-    .navbar-right {
-        gap: 20px;
-    }
 }
 
 @media screen and (max-width:770px) {
 
     .ham-menu {
         display: flex;
+        font-size: 25px;
     }
 
     .navbar-menu {
@@ -144,17 +128,7 @@
     .navbar button {
         font-size: 20px;
     }
-
-    .ham-menu {
-        font-size: 25px;
-    }
-
-    .navbar-right {
-        gap: 40px;
-    }
-
 }
-
 
 @media screen and (max-width:450px) {
     .navbar .logo {
@@ -190,5 +164,4 @@
         margin: 2rem;
         font-size: 18vw;
     }
-
 }

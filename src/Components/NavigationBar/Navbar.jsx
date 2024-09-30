@@ -16,7 +16,7 @@ const Navbar = ({ setShowLogin }) => {
 
   return (
     <div className='navbar'>
-      <img src={logo} alt='' className='logo' />
+      <RouterLink to='/'><img src={logo} alt='' className='logo' /></RouterLink>
 
       <ul className="navbar-menu">
         {/*
@@ -25,14 +25,12 @@ const Navbar = ({ setShowLogin }) => {
         <li onClick={() => setHighlight("mobapp")} className={highlight === 'mobapp' ? 'active' : ""}><a href="#mobile-app">Mobile App</a></li>
         <li onClick={() => setHighlight("contact")} className={highlight === 'contact' ? 'active' : ""}><a href="#footer">Contact</a></li>*/}
 
-        <RouterLink to='/'><li>Home</li></RouterLink>
         <ScrollLink to='header' spy={true} offset={-100} smooth={true} duration={500}><li>About</li></ScrollLink>
         <ScrollLink to='explore-menu' spy={true} offset={-100} smooth={true} duration={500}><li>Menu</li></ScrollLink>
-        <ScrollLink to='mobile-app' spy={true} offset={-100} smooth={true} duration={500}><li>Services</li></ScrollLink>
+        <ScrollLink to='mobile-app' spy={true} offset={-100} smooth={true} duration={500}><li>App</li></ScrollLink>
         <ScrollLink to='footer' spy={true} offset={-100} smooth={true} duration={500}><li>Contact</li></ScrollLink>
-
       </ul>
-
+      
       <div className="navbar-right">
         <div className="navbar-basket">
           {
@@ -48,10 +46,9 @@ const Navbar = ({ setShowLogin }) => {
 
         <FontAwesomeIcon icon={faBars} className='ham-menu' onClick={() => setShowMenu(!showMenu)} />
         <ul className="mob-navbar-menu" style={{ display: showMenu ? 'flex' : 'none' }}>
-          <RouterLink to='/'><li onClick={() => setShowMenu(false)}>Home</li></RouterLink>
           <ScrollLink to='header' spy={true} offset={-100} smooth={true} duration={500}><li onClick={() => setShowMenu(false)}>About</li></ScrollLink>
           <ScrollLink to='explore-menu' spy={true} offset={-100} smooth={true} duration={500}><li onClick={() => setShowMenu(false)}>Menu</li></ScrollLink>
-          <ScrollLink to='mobile-app' spy={true} offset={-100} smooth={true} duration={500}><li onClick={() => setShowMenu(false)}>Services</li></ScrollLink>
+          <ScrollLink to='mobile-app' spy={true} offset={-100} smooth={true} duration={500}><li onClick={() => setShowMenu(false)}>App</li></ScrollLink>
           <ScrollLink to='footer' spy={true} offset={-100} smooth={true} duration={500}><li onClick={() => setShowMenu(false)}>Contact</li></ScrollLink>
         </ul>
       </div>

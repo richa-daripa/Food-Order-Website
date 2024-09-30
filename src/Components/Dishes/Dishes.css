@@ -73,37 +73,15 @@
     background-color: white;
     padding: 3px;
     border-radius: 5px;
+
 }
 
 .foodcounter p {
-    color: tomato;
+    color: black;
     font-size: 16px;
 }
 
-
 /*---------------------------------------------------responsive---------------------------------------------------*/
-@media screen and (max-width:1024px) {
-
-    .dishes-rating p,
-    .dishes-price span,
-    .foodcounter p,
-    #add-icon {
-        font-size: 2.2vw;
-    }
-
-    .dishes-descrip {
-        font-size: 1.5vw;
-    }
-
-    .dishes-price {
-        font-size: 3vw;
-    }
-
-    .dishes button {
-        width: 35px;
-        font-size: 25px;
-    }
-}
 
 @media screen and (max-width:770px) {
     .dishes-rating p {
@@ -120,38 +98,26 @@
 
     .dishes-price {
         font-size: 5vw;
-
     }
 
-    .dishes-price span {
+    .dishes-price span,
+    .foodcounter p {
         font-size: 3vw;
     }
 
     .dishes button {
-        width: 40px;
-        font-size: 30px;
+        width: 35px;
+        font-size: 28px;
     }
 
     .foodcounter {
         border-radius: 10px;
-    }
-
-    .foodcounter p,
-    #add-icon {
-        font-size: 3.5vw;
-        padding: 0 7px;
+        font-size: 3vw;
+        gap: 20px;
     }
 }
 
 @media screen and (max-width:450px) {
-    .dishes {
-        border-radius: 25px;
-    }
-
-    .dishes-img {
-        border-radius: 25px 25px 0px 0px;
-    }
-
     .dishes-info {
         padding: 30px;
     }
@@ -179,24 +145,18 @@
         font-size: 25vw;
     }
 
-    .dishes-price span {
+    .dishes-price span,
+    .foodcounter p {
         font-size: 15vw;
     }
 
     .dishes button {
-        width: 100px;
-        font-size: 75px;
+        width: 90px;
+        font-size: 65px;
     }
 
     .foodcounter {
-        border-radius: 25px;
-        padding: 5px;
+        font-size: 4rem;
+        gap: 40px;
     }
-
-    .foodcounter p,
-    #add-icon {
-        font-size: 20vw;
-        padding: 0 20px;
-    }
-
 }

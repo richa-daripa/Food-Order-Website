@@ -7,10 +7,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 0.5fr;
     align-items: center;
-    color: black;
     font-size: 20px;
     text-align: center;
-    
 }
 
 .styling p {
@@ -21,7 +19,6 @@
 
 .food-ordered {
     margin: 10px 0px;
-    color: black;
     font-size: 18px;
     place-items: center;
 }
@@ -51,7 +48,7 @@
     display: flex;
     justify-content: space-between;
     gap: max(12vw, 20px);
-
+    color: #515151;
 }
 
 .cart-total {
@@ -66,12 +63,12 @@
     margin-bottom: 10px;
     font-size: 25px;
     font-weight: 600;
+    color: black;
 }
 
 .total-details {
     display: flex;
     justify-content: space-between;
-    color: #515151;
     font-size: 18px;
 }
 
@@ -97,10 +94,6 @@
 
 .promocode {
     width: 400px;
-}
-
-.promocode p {
-    color: #666666;
     font-size: 18px;
 }
 
@@ -118,6 +111,7 @@
     border: none;
     outline: none;
     padding-left: 10px;
+    font-size: 16px;
 }
 
 .promo-input button {
@@ -130,50 +124,18 @@
     cursor: pointer;
 }
 
-
 /*---------------------------------------------------responsive---------------------------------------------------*/
+
 @media screen and (max-width:1024px) {
     .cart {
-        padding: 15% 5% 0;
-    }
-
-    .cart-items hr {
-        height: 1px;
-        background-color: #b1b0b0;
-        border: none;
-    }
-
-    .cart-bottom .cart-total hr {
-        background-color: #b1b0b0;
-    }
-
-    .heading {
-        font-size: 20px;
-    }
-
-    .food-ordered,
-    .cart-total button,
-    .total-details,
-    .promocode,
-    .promocode p {
-        font-size: 18px;
-    }
-
-    .food-ordered button {
-        font-size: 16px;
-        border-radius: 10px;
-    }
-
-    .cart-total h2,
-    .cart-items h2 {
-        font-size: 25px;
+        padding: 10% 5% 0;
     }
 }
 
 @media screen and (max-width:770px) {
     .cart {
-        min-width: 120%;
-        padding: 20% 5% 5%;
+        min-width: 150%;
+        padding: 25% 5% 5%;
     }
 
     .heading {
@@ -190,25 +152,21 @@
         flex-direction: column;
     }
 
-    .cart-total {
+    .cart-total,
+    .promocode {
         width: 500px;
     }
 
     .food-ordered,
     .cart-total button,
     .total-details,
-    .promocode,
-    .promocode p {
+    .promocode {
         font-size: 20px;
     }
 
     .cart-total h2,
     .cart-items h2 {
         font-size: 25px;
-    }
-
-    .promocode {
-        width: 60%;
     }
 
     .promo-input input,
@@ -223,29 +181,21 @@
 
 @media screen and (max-width:450px) {
     .cart {
-        padding-top: 100%;
+        padding: 100% 10% 50%;
     }
 
     .cart-items {
-        width: 350%;
-        padding: 0 10%;
-    }
-
-    .cart hr {
-        height: 3px;
-        background-color: #5c5b5b;
-        border: none;
+        width: 380%;
     }
 
     .heading {
         font-size: 15vw;
-        margin-bottom: 2%;
         grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr 0.5fr;
     }
 
     .food-ordered {
         font-size: 14vw;
-        margin: 3% 0;
+        margin: 35px 0;
     }
 
     .food-ordered img {
@@ -253,9 +203,8 @@
     }
 
     .food-ordered button {
-        font-size: 14vw;
-        width: 100%;
-        padding: 10px 20px;
+        font-size: 12vw;
+        padding: 10px 30px;
     }
 
     .cart-total {
@@ -268,35 +217,21 @@
         margin-bottom: 5%;
     }
 
-    .total-details {
+    .cart-bottom {
+        margin-top: 60%;
+        gap: 150px;
+    }
+
+    .total-details,
+    .promocode {
         font-size: 15vw;
         margin: 3% 0;
     }
 
-    .cart-bottom {
-        margin-top: 60%;
-        padding-left: 10%;
-    }
-
     .cart-total button {
         font-size: 16vw;
-        width: 90vh;
+        width: 50vh;
         padding: 20px 30px;
-    }
-
-    .promocode {
-        font-size: 15vw;
-        width: 200%;
-        margin: 50% 0 20%;
-    }
-
-    .promocode p {
-        font-size: 15vw;
-    }
-
-    .promo-input {
-        margin: 10% 0;
-        width: 150%;
     }
 
     .promo-input input,
@@ -304,13 +239,13 @@
         font-size: 14vw;
     }
 
-    .promo-input input {
-        padding: 20px;
+    .promocode {
+        font-size: 15vw;
+        width: 280%;
     }
 
     .promo-input button {
         width: 25%;
         padding: 20px;
     }
-
 }

@@ -13,9 +13,9 @@ const Footer = () => {
                     <img src={logo} alt='' />
                     <p>Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. </p>
                     <div className="social-link">
-                        <FontAwesomeIcon icon={faFacebook}  className='icon' />
-                        <FontAwesomeIcon icon={faXTwitter}  className='icon' />
-                        <FontAwesomeIcon icon={faWhatsapp}  className='icon' />
+                        <FontAwesomeIcon icon={faFacebook}  />
+                        <FontAwesomeIcon icon={faXTwitter}  />
+                        <FontAwesomeIcon icon={faWhatsapp}  />
                     </div>
                 </div>
                 <div className="content-center">

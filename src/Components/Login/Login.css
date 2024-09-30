@@ -17,8 +17,7 @@
     gap: 30px;
     padding: 20px 30px;
     border-radius: 8px;
-    animation: fadeIn 0.5s;
-    font-size: 16px;
+    animation: fadeIn 0.5s ease-in-out;
 }
 
 .sign-in .content .title {
@@ -26,15 +25,15 @@
     justify-content: space-between;
     align-items: center;
     color: black;
-    font-size: 20px;  
+    font-size: 20px;
 }
-.title h2{
-    font-weight: 500;
+
+.title h2 {
+    font-weight: 600;
 }
 
 #cross-icon {
     cursor: pointer;
-    font-size: 25px;
 }
 
 .popup {
@@ -45,15 +44,13 @@
 
 .popup input {
     outline: none;
-    border: 1px solid #c9c9c9;
+    border: 1px solid #a8a8a8;
     padding: 10px;
     border-radius: 5px;
     font-size: 18px;
 }
 
 .popup input:focus {
-    color: #475F7B;
-    background-color: #FFF;
     border-color: #5A8DEE;
     outline: 0;
     box-shadow: 0 3px 8px 0 rgb(0 0 0 / 10%);
@@ -66,7 +63,7 @@
     color: white;
     background-color: #f4511e;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .condition {
@@ -75,7 +72,7 @@
     gap: 8px;
     margin-top: -15px;
     color: rgb(137, 135, 135);
-    font-size: 15px;
+    font-size: 14px;
 }
 
 .condition input {
@@ -94,9 +91,8 @@
 .content h1 {
     display: flex;
     flex-direction: row;
-    color: #cccccc;
-    font-weight: 100;
-    font-size: 25px;
+    color: #989898;
+    font-size: 20px;
 }
 
 .content h1:before,
@@ -112,73 +108,69 @@
     color: black;
     border: 1px solid rgb(110, 109, 109);
 }
-.validation-messages{
+
+.validation-messages {
     font-size: 14px;
     padding-left: 10px;
     color: red;
 }
-/*----------------------------------------------------------------responsive-------------------------------------------------*/
 
-@media screen and (max-width:770px){
+/*----------------------------------------------------------------responsive-------------------------------------------------*/
+@media screen and (max-width:770px) {
     .sign-in .content {
         width: 60vh;
-        padding: 5% 3%;
-    }
-    .sign-in .title {
-        margin-bottom: 5%;
+        padding: 5% 3% 3%;
     }
 
     .sign-in h2 {
         font-size: 4.5vw;
     }
-    #cross-icon {
-        font-size: 30px;
-    }
-    .popup input {
-        padding: 10px 20px;
+
+    .popup input,
+    #bottom-line,
+    #bottom-line span {
         font-size: 3vw;
-        border: 1px solid grey;
     }
+
     .condition {
         margin-top: 10px;
         font-size: 2.5vw;
     }
+
     .condition input {
-        width: 35px;
-        height: 35px;
+        width: 30px;
+        height: 30px;
     }
+
     .sign-in .content button {
         font-size: 3vw;
         padding: 3%;
         margin: 5px 0;
     }
-    #bottom-line, #bottom-line span {
-        font-size: 3vw;
-    }
-    .content h4 {
-        font-size: 3.2vw;
-    }
-    .validation-messages{
-        font-size: 2vw; 
+
+    .validation-messages {
+        font-size: 2vw;
     }
 }
+
 @media screen and (max-width:450px) {
 
     .sign-in .content {
         width: 140vh;
-        padding: 5% ;
+        padding: 5%;
+        gap: 70px;
     }
 
     .sign-in .title {
-        margin-bottom: 10%;
+        margin-bottom: 40px;
     }
 
     .sign-in h2 {
-        font-size: 20vw;
+        font-size: 22vw;
     }
 
     #cross-icon {
-        font-size: 70px;
+        font-size: 50px;
     }
 
     .popup {
@@ -188,45 +180,39 @@
     .popup input {
         padding: 20px 50px;
         font-size: 16vw;
-        border: 2px solid grey;
+        border: 1px solid grey;
     }
-    
+
     .condition {
-        margin-top: 5%;
         font-size: 13vw;
     }
 
     .condition input {
-        width: 90px;
+        width: 65px;
         height: 65px;
     }
 
     .sign-in .content button {
-        font-size: 15vw;
+        font-size: 16vw;
         padding: 3%;
-        margin: 5% 0;
-        border-radius: 15px;
     }
 
-    #bottom-line, #bottom-line span {
+    #bottom-line,
+    #bottom-line span {
         font-size: 15vw;
     }
 
-    .content h4 {
+    .content h1 {
         font-size: 20vw;
     }
 
-    .content h4:before,
-    .content h4:after {
-        border-bottom: 2px solid #514f4f;
+    .content h1:before,
+    .content h1:after {
+        border-bottom: 1px solid #514f4f;
         margin: 0 2% 3.5%;
     }
 
-    .sign-in .content .google {
-        border: 2px solid rgb(56, 55, 55);
-    }
-
-    .validation-messages{
-        font-size: 12vw; 
+    .validation-messages {
+        font-size: 12vw;
     }
 }

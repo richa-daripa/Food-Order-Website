@@ -23,23 +23,17 @@
 @media screen and (max-width:1024px) {
     .food-display-list {
         padding: 5%;
-        gap: 20px;
     }
 }
 
 @media screen and (max-width:770px) {
     .food_display {
-        min-width: 120%;
-        padding: 5% 0;
-    }
-
-    .food_display h2 {
-        font-size: 4.5vw;
+        min-width: 150%;
+        padding: 8%;
     }
 
     .food-display-list {
         grid-template-columns: 1fr 1fr;
-        gap: 50px;
     }
 }
 
@@ -50,7 +44,7 @@
     }
 
     .food_display h2 {
-        font-size: 20vw;
+        font-size: 25vw;
     }
 
     .food-display-list {
